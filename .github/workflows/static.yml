@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEUZIN GAMEPLAYS</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080d18;color:white;line-height:1.6}
+header{background:#111a2b;padding:20px;text-align:center;border-bottom:2px solid #168cff}
+.logo{width:85px;height:85px;object-fit:cover;border-radius:14px;margin-bottom:8px}
+h1{color:#39d0ff}
+header p{color:#b8c4d9;margin:8px 0 15px}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+button,.btn{border:0;display:inline-block;background:#1769ff;color:white;padding:11px 15px;border-radius:8px;font-weight:bold;text-decoration:none;cursor:pointer}
+button:hover,.btn:hover{background:#39baff;color:#08111f}
+main{width:92%;max-width:1100px;margin:auto}
+.hero{text-align:center;padding:40px 10px}
+.hero h2{font-size:30px;margin-bottom:12px}
+.hero p{color:#b8c4d9;margin-bottom:20px}
+section{padding:25px 0}
+.titulo{font-size:26px;color:#39d0ff;border-left:4px solid #1769ff;padding-left:12px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:#111a2b;border:1px solid #293650;border-radius:14px;overflow:hidden}
+.card img{width:100%;height:165px;object-fit:cover;display:block;background:#202c42}
+.conteudo{padding:17px}
+.badge{display:inline-block;background:#243e65;color:#8ee7ff;padding:4px 9px;border-radius:20px;font-size:12px;margin-bottom:8px}
+.card h3{margin-bottom:8px}
+.card p{color:#b8c4d9;font-size:14px;margin-bottom:15px}
+.card .btn{width:100%;text-align:center}
+.aviso{color:#b8c4d9;border:1px dashed #43516c;padding:15px;border-radius:10px;margin:18px 0}
+footer{text-align:center;padding:25px;background:#111a2b;color:#b8c4d9;margin-top:30px;font-size:13px}
+.pagina{display:none}
+.pagina.ativa{display:block}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.hero h2{font-size:25px}}
+</style>
+</head>
+
+<body>
+
+<header>
+<img class="logo"
+src="https://i.postimg.cc/DyCXYN25/Screenshot-20261015-184535-You-Tube.jpg"
+alt="Logo Teuzin Gameplays">
+
+<h1>TEUZIN GAMEPLAYS</h1>
+<p>@teuzin_gameplays • Narrações, Estádios, Faces e Mods</p>
+
+<nav>
+<button onclick="mostrarPagina('inicio')">Início</button>
+<button onclick="mostrarPagina('narracoes')">Narrações</button>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">YouTube</a>
+</nav>
+</header>
+
+<main>
+
+<!-- PÁGINA INICIAL -->
+<div id="inicio" class="pagina ativa">
+
+<div class="hero">
+<h2>Central de Downloads & Mods</h2>
+<p>Conteúdos organizados para PES 2017 e PES 2021.</p>
+<button onclick="mostrarPagina('narracoes')">
+Acessar página de narrações
+</button>
+</div>
+
+<section>
+<h2 class="titulo">PES 2017</h2>
+<div class="grid">
+
+<article class="card">
+<img src="https://placehold.co/600x340/17233a/ffffff?text=PES+2017"
+alt="PES 2017">
+<div class="conteudo">
+<span class="badge">PES 2017</span>
+<h3>Narrações PES 2017</h3>
+<p>Narrações para suas partidas.</p>
+<button onclick="mostrarPagina('narracoes','pes17')">Ver narrações</button>
+</div>
+</article>
+
+<article class="card">
+<img src="https://placehold.co/600x340/17233a/ffffff?text=Estadios+PES+2017"
+alt="Estádios PES 2017">
+<div class="conteudo">
+<span class="badge">PES 2017</span>
+<h3>Estádios PES 2017</h3>
+<p>Espaço para packs de estádios.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver conteúdos</a>
+</div>
+</article>
+
+<article class="card">
+<img src="https://placehold.co/600x340/17233a/ffffff?text=Faces+e+Mods"
+alt="Faces e mods PES 2017">
+<div class="conteudo">
+<span class="badge">PES 2017</span>
+<h3>Faces e Mods</h3>
+<p>Modificações para PES 2017.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver conteúdos</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<section>
+<h2 class="titulo">PES 2021</h2>
+<div class="grid">
+
+<article class="card">
+<img src="https://placehold.co/600x340/292052/ffffff?text=PES+2021"
+alt="PES 2021">
+<div class="conteudo">
+<span class="badge">PES 2021</span>
+<h3>Narrações PES 2021</h3>
+<p>Narrações para PES 2021.</p>
+<button onclick="mostrarPagina('narracoes','pes21')">Ver narrações</button>
+</div>
+</article>
+
+<article class="card">
+<img src="https://placehold.co/600x340/292052/ffffff?text=Estadios+PES+2021"
+alt="Estádios PES 2021">
+<div class="conteudo">
+<span class="badge">PES 2021</span>
+<h3>Estádios PES 2021</h3>
+<p>Espaço para packs de estádios.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver conteúdos</a>
+</div>
+</article>
+
+<article class="card">
+<img src="https://placehold.co/600x340/292052/ffffff?text=Faces+e+Mods"
+alt="Faces e mods PES 2021">
+<div class="conteudo">
+<span class="badge">PES 2021</span>
+<h3>Faces e Mods</h3>
+<p>Modificações para PES 2021.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver conteúdos</a>
+</div>
+</article>
+
+</div>
+</section>
+</div>
+
+<!-- PÁGINA EXCLUSIVA DE NARRAÇÕES -->
+<div id="narracoes" class="pagina">
+
+<div class="hero">
+<h2>Página de Narrações</h2>
+<p>Escolha seu jogo e encontre a narração desejada.</p>
+<button onclick="mostrarPagina('inicio')">Voltar ao início</button>
+</div>
+
+<section id="secao-pes17">
+<h2 class="titulo">Narrações PES 2017</h2>
+<div class="grid">
+
+<article class="card">
+<img src="https://placehold.co/600x340/17233a/ffffff?text=PES+2017"
+alt="Narração PES 2017">
+<div class="conteudo">
+<span class="badge">PES 2017</span>
+<h3>André Henning</h3>
+<p>Adicione aqui a descrição e o link correto do download.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver no canal</a>
+</div>
+</article>
+
+<article class="card">
+<img src="https://placehold.co/600x340/17233a/ffffff?text=PES+2017"
+alt="Narração PES 2017">
+<div class="conteudo">
+<span class="badge">PES 2017</span>
+<h3>Cléber Machado</h3>
+<p>Adicione aqui a descrição e o link correto do download.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver no canal</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="secao-pes21">
+<h2 class="titulo">Narrações PES 2021</h2>
+<div class="grid">
+
+<article class="card">
+<img src="https://placehold.co/600x340/292052/ffffff?text=PES+2021"
+alt="Narração PES 2021">
+<div class="conteudo">
+<span class="badge">PES 2021</span>
+<h3>Cléber Machado</h3>
+<p>Adicione aqui a descrição e o link correto do download.</p>
+<a class="btn" href="https://www.youtube.com/@teuzin_gameplays"
+target="_blank" rel="noopener">Ver no canal</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<div class="aviso">
+Os links de download e as capas definitivas poderão ser adicionados depois.
+</div>
+
+</div>
+</main>
+
+<footer>
+<p>© TEUZIN GAMEPLAYS</p>
+<p>Conteúdos e modificações para a comunidade PES.</p>
+</footer>
+
+<script>
+function mostrarPagina(nome, secao) {
+  document.querySelectorAll('.pagina').forEach(function(pagina) {
+    pagina.classList.remove('ativa');
+  });
+
+  document.getElementById(nome).classList.add('ativa');
+  window.scrollTo(0, 0);
+
+  if (secao) {
+    setTimeout(function() {
+      var alvo = secao === 'pes17'
+        ? document.getElementById('secao-pes17')
+        : document.getElementById('secao-pes21');
+
+      alvo.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  }
+}
+</script>
+
+</body>
+</html>
